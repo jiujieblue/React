@@ -1,0 +1,48 @@
+@import "./public.less";
+.seller-public-detail{
+	.em{
+		display:inline-block;
+		width:1em;
+	}
+	.em_5{
+		display:inline-block;
+		width:.5em;
+	}
+	ul,	ol,	li,	p,	h1, h2,	h3,h4,	h5,	h6,	dl,	dt,	dd,	input {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	min-height: 788px;
+	background: #fff;
+	padding-bottom:20px;
+
+	&-location{
+		padding:20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fcc505;
+	}
+	&-tit{
+		margin-top: 25px;
+		padding:0 20px;
+		>div{
+			border-bottom:1px solid #ddd;
+			padding-bottom:10px;
+		}
+	}
+	&-time{
+		margin-top:10px;
+		padding: 0 20px;
+		overflow: hidden;
+		p{
+			float: left;
+			margin-right: 30px;
+			color:#b3b3b3;
+		}
+	}
+}

@@ -1,0 +1,272 @@
+@import "./public.less";
+
+
+.shopping-all{
+	ul,li,p,h1,h2,h3,h4,h5,h6,dl,dd,dt{
+		padding:0;
+		margin:0;
+	}
+	ul{list-style:none;}
+	&-nav{
+		color: #666;
+		position: relative;
+		 display: none;
+		li{
+			display:inline-block;
+			width: 120px;
+			height: 40px;
+			font-size: 18px;
+			background: #ccc;
+			line-height: 40px;
+			text-align: center;
+			margin-right: 5px;
+			border-radius: 3px 3px 0 0;
+			cursor: pointer;
+			transition: all 0.3s linear;
+			&.active{
+				position: relative;
+				background:#fff;
+			}
+			&.active:before{
+				content:"";
+				display: inline-block;
+				width: 100%;
+				height: 3px;
+				background: #fdc307;
+				position: absolute;
+				top:0;left:0;
+			}
+			&:last-child{
+				display: none;
+			}
+		}
+	}
+	&-goodssum{
+		padding:0 20px;
+		background: #fff;
+		>p{
+			border-bottom: 1px solid #fdc307;
+			padding: 10px 0;
+			span{
+				float: right;
+			}
+		}
+		>div{
+			margin-top: 15px;
+			max-height: 72px;
+			overflow: hidden;
+			transition:all 0.35s linear;
+			&:after{
+				display: table;
+				content:"";
+				clear: both;
+			}
+			span:first-child{
+				font-size: 16px;
+				float: left;
+			}
+			>ul{
+				float: left;
+				padding-top:2px;
+				margin-left: 10px;
+				width: 80%;
+				&:after{
+					display: table;
+					content:"";
+					clear: both;
+				}
+				>li{
+					float:left;
+					padding: 0 20px 15px 0;
+					a{
+						color: #999;
+						&:hover{
+							color: #333;
+						}
+					}
+				}
+			}
+			&.show{
+				& i:last-child{
+					transform:rotate(225deg);
+				}
+			}
+			span:nth-child(3){
+				float: right;
+				font-size: 16px;
+				border-left: 1px solid #666;
+				padding:3px 30px;
+				cursor: pointer;
+				transition:all 0.5s linear;
+				&:hover{
+					background: #fdc307;
+					color: #fff;
+					+i{
+						border-color: #fff;
+					}
+				}
+			}
+			i{
+				float:right;
+				display: inline-block;
+				width:9px;
+				height: 9px;
+				border: 1px solid #666;
+				border-left: none;
+				border-top:none;
+				position:relative;
+				top:8px;
+				left: 85px;
+				transform:rotate(45deg);
+				transition:all 0.4s linear;
+			}
+		}
+	}
+	&-sales{
+		ul{
+			background: #ececec;
+			padding: 4px;
+
+			li{
+				display:inline-block;
+				width: 100px;
+				height: 30px; 
+				line-height: 30px;
+				text-align: center;
+			}
+		}
+		ul:first-child{
+			float: left;
+			border-right: 2px solid #fff;
+			li{
+				padding:0 15px 0 15px;
+			}
+			li:nth-child(2){
+				background:#fff;
+				color: #fdc307;
+				cursor: pointer;
+				i{
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					border: 1px solid #fdc307;
+					transform: rotate(45deg);
+					position: relative;
+					top: 0;left: 6px;
+					border-right: none;
+					border-bottom:none;
+				}
+			}
+		}
+		ul:last-child{
+			li{
+				width: 115px;
+			}
+			li:nth-child(2){
+				width:20px;
+				position: relative;
+				top:0;left: 7px;
+			}
+			li:nth-child(2n-1):before{
+				content:"￥";
+				display: inline-block;
+				position: relative;
+				top: 0;
+				left: 20px;
+			}
+			input{
+				padding-left: 30px;
+				width: 100px;
+				height:30px;
+				outline: none;
+				border: none;
+			}recom{
+				float: right;
+			}
+		} 
+	}
+	&-details{
+		margin-top: 10px;
+		&:after{
+			content:'';
+			display: table;
+			clear: both;
+		}
+		&-class{
+			width:85%;
+			float: left;
+			ul:after{
+				content:'';
+				display: table;
+				clear: both;
+			}
+			ul li{
+				float: left;
+				border-right: 10px solid #f7f7f7;
+				border-bottom: 10px solid #f7f7f7;
+				width: 25%;
+				background:#fff;
+				padding: 0 10px;
+				height: 370px;
+				position: relative;
+				img{
+					width: 100%;
+				}
+				p:first-child{
+					margin:10px 0;
+					span{
+						border: none;
+						float: right;
+						font-size: 20px;
+						cursor: pointer;
+						display: none;
+					}
+					b{
+						color: red;
+						font-size: 16px;
+					}
+	 			}
+	 			p:last-child{
+	 				margin: 15px 0;
+	 				position: absolute;
+	 				bottom: 0;
+	 				left: 10px;
+	 				width:91%;
+	 				input{
+	 					float: right;
+	 					background: #fff;
+	 					outline: none;
+	 					border: 1px solid #ccc;
+	 					color: #999;
+	 					&:hover{
+	 						border-color: #333; 
+	 						color: #333;
+	 					}
+	 				}
+	 			}
+			}
+		}
+		&-recom{
+			float: right;
+			width: 15%;
+			ul li{
+				margin-bottom: 15px;
+			}
+			ul li:first-child{
+				height: 40px;
+				background: #fff;
+				line-height: 40px;
+				margin-bottom: 10px;
+				font-size: 18px;
+
+				span{
+					padding:0 10px;
+					background: red;
+					color: #fff;
+					margin-right: 5px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

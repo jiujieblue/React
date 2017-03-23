@@ -1,0 +1,73 @@
+@import "./public.less";
+.pay-header {
+	ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,input {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+	
+	&-top{
+		background:#eee;
+		overflow:hidden;
+		ul{
+			float:right;
+			li{
+				display: inline-block;
+				padding:5px 10px;
+				margin-left: 20px;
+			}
+		}
+	}
+	&-mid{
+		margin-top: 30px;
+		&-box{
+			overflow:hidden;
+			>div:first-child{
+				float:left;
+			}
+			>div:last-child{
+				float:right;
+				text-align:center;
+				>div{position: relative;
+					display:inline-block;
+					width:150px;
+					font-size: 12px;
+					>span:first-child{
+						display:inline-block;
+						width:30px;
+						height:30px;
+						border-radius: 50%;
+						background:#aaa;
+						color:#fff;
+						line-height: 30px;
+						text-align: center;
+					}
+					span.bg{
+						background:#fcc505;
+					}
+					>span:last-child{
+					position:absolute;
+					width:80%;
+					border:1px solid #aaa;
+					top:30%;
+					left:60%;
+					}
+					span.active{
+						border:1px solid #fcc505;
+					}
+				}
+			}
+		}
+	}
+}

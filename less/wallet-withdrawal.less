@@ -1,0 +1,168 @@
+@import "./public.less";
+
+.wallet-withdrawal{
+	// 通用样式
+	ul,li,p,h1,h2,h3,h4,h5{
+		padding: 0;
+		margin: 0;
+	}
+	ul{list-style: none;}
+	// box 样式
+	height: 690px;
+	background: #fff;
+	>p{
+		padding: 15px 20px;
+		&:first-child{
+			border-bottom: 1px solid #fcc506;
+			span{
+				margin-right: 5px;
+				color: #999;
+			}
+		}
+		&:nth-child(2){
+			color: #666;
+		}
+	}
+	>form{
+		>div{
+			width: 45%;
+			margin: 30px auto 0;
+			>ul{
+				&:first-child{
+					>li{
+						.clearfix();
+						>span{
+							float: left;
+							width: 84px;
+							margin: 8px 10px 0 0;
+						}
+						>div{
+							float: left;
+							position: relative;
+							>p{
+								line-height: 38px;
+								padding-left: 10px;
+								border: 1px solid #ccc;
+							}
+							>div{
+								border: 1px solid #ccc;
+								padding: 0 30px 0 5px;
+								img{
+									width: 126px;
+									height: 36px;
+								}
+								span{
+									margin-right: 10px;
+								}
+							}
+							>ul{
+								position: absolute;
+								top: 38px;left: 0;
+								transition: all 0.35s linear;
+								background: #fff;
+								display: none;
+								opacity: 0;
+								&.shou{
+									display: block;
+									opacity: 1;
+								}
+								li{
+									padding: 0 30px 0 5px;
+									cursor: pointer;
+									border: 1px solid #ccc;
+									border-top-color: transparent;
+									border-bottom-color: transparent;
+									span{
+										margin-right: 10px;
+									}
+									&:last-child{
+										border-bottom-color: #ccc;
+									}
+									&:hover{
+										border-color: #fcc505;
+									}
+								}
+							}
+							i{
+								display: inline-block;
+								width: 10px;
+								height: 10px;
+								border: 1px solid #ccc;
+								border-top: none;
+								border-left: none;
+								position: absolute;
+								right: 10px;
+								top: 10px;
+								transform: rotate(45deg);
+								transition: transform 0.35s linear;
+								transform-origin: 75% 75%;
+								&.rotate{
+									transform: rotate(225deg);
+								}
+							}
+						}
+						&:last-child{
+							margin-top: 40px;
+							a{
+								padding: 5px 20px;
+								background: #fcc505;
+								border-radius: 3px;
+								color: #333;
+								&:visited ,&:hover,&:active {
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+				&:last-child{
+					margin: 50px 0 30px;
+					li{
+						margin-bottom: 20px;
+						span{
+							display: inline-block;
+							width: 84px;
+							margin-right: 10px;
+						}
+						p{
+							margin-left: 100px;
+							margin-top: 2px;
+							font-size: 12px;
+							color: red;
+						}
+						a{
+							margin-left: 10px;
+							margin-top: 2px;
+							font-size: 12px;
+							color: #50c4fc;
+						}
+						input{
+							outline: none;
+							padding-left: 5px;
+							border: 1px solid #ccc;
+							&.seller-withdrawal-input{
+								border-color: red;
+							}
+						}
+					}
+				}
+			}
+		}
+		>p{
+			margin-top: 20px;
+			text-align: center;
+			span{
+				margin: 0 3px;
+				color: red;
+			}
+			button{
+				width: 110px;
+				padding: 5px 0;
+				margin-right: 120px;
+				border: none;
+				border-radius: 3px;
+				background: #fcc505;
+			}
+		}
+	}
+}

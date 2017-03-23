@@ -1,0 +1,108 @@
+@import "./public.less";
+.seller-asset-view {
+	.em{
+		display:inline-block;
+		width:1em;
+	}
+	.em_5{
+		display:inline-block;
+		width:.5em;
+	}
+	ul,	ol,	li,	p,	h1, h2,	h3,h4,	h5,	h6,	dl,	dt,	dd,	input {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	min-height: 788px;
+	background: #fff;
+	padding-bottom:20px;
+	&-location{
+		padding:20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fcc505;
+	}
+	&-graph{
+		padding:50px 20px;
+		overflow: hidden;
+		>div{
+			float: left;
+		}
+		.graph-canvas-l{
+
+		}
+		.graph-canvas-m{
+			margin-left: 50px;
+			margin-right: 50px;
+			margin-top: 75px;
+			>div{
+				margin-top: 20px;
+				color:#ff450c;
+			}
+		}
+		.graph-canvas-r{
+			margin-top:75px;
+			>div{
+				overflow:hidden;
+				>div{
+					width:15px;
+					height:15px;
+					float:left;
+					margin-top: 3px;
+				}
+				>p{
+					float:left;
+					margin-right:20px;
+					margin-left:15px;
+				}
+				>span{
+					float:left;
+					color:#ff450c;
+				}
+			}
+			>div:first-child{
+				>div{
+					background:#50c4fc;
+				}
+			}
+			>div:last-child{
+				margin-top: 20px;
+				>div{
+					background:#fcc505;
+				}
+			}
+		}
+	}
+	&-detailbox{
+		.detailbox-title{
+			padding:10px 30px;
+			background:#eee;
+		}
+		.detailbox-detail{
+			padding:20px 30px;
+			border-bottom:1px solid #ddd;
+			overflow:hidden;
+			>div{
+				float:left;
+				>h4{
+					display:inline-block;
+					margin-right:10px;
+				}
+				>span{
+					color:#a7a7a7;
+				}
+			}
+			>div:nth-child(2){
+				margin-left:180px;
+			}
+			>div:last-child{
+				float:right;
+				color:#ff450c;
+			}
+		}
+	}
+}

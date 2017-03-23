@@ -1,0 +1,61 @@
+@import "./public.less";
+.seller-header {
+	ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,input {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+	
+	&-top{
+		background:#eee;
+		overflow:hidden;
+		ul{
+			float:right;
+			li{
+				display: inline-block;
+				padding:5px 10px;
+				margin-left: 20px;
+			}
+		}
+	}
+	&-mid{
+		background:#fff;
+		margin-bottom: 20px;
+		padding:0 0 25px 0;
+		&-box{
+			overflow:hidden;
+			>div{
+				float:left;
+				padding:0 20px;
+				margin-top: 35px;
+				font-size:24px;
+			}
+			>div:first-child{
+				margin-top:0;
+				padding:0;
+				span{
+					color:#fcc505;
+					font-size: 100px;
+				}
+			} 
+			>div:nth-child(2){
+				color:#a0a0a0;
+				border-right: 1px solid #a0a0a0;
+			}
+			>div:last-child{
+				color:#1a1a1a;
+			}
+
+		}
+	}
+}

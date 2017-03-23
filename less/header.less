@@ -1,0 +1,271 @@
+@import "./public.less";
+.header {
+	margin-bottom: 20px;
+	&-top {
+		background-color: #efedee;
+		padding: 5px 0;
+
+		&-link {
+			color: #333;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: #333;
+			}
+		}
+
+		&-sep {
+			display: inline-block;
+			margin: 0 10px;
+		}
+	}
+
+	&-logo {
+		text-align: center;
+		padding: 30px 0;
+	}
+
+	&-qrcode {
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	&-nav {
+		background-color: @ck-sub;
+		.clearfix();
+
+		&-inner {
+			width: 1170px;
+			margin: 0 auto;
+		}
+
+		&-items {
+			margin:0;
+			padding: 0;
+			float: left;
+			margin-left: 50px;
+		}
+
+		&-item {
+			list-style-type: none;
+			display: block;
+			float: left;
+			position: relative;
+
+			&.active {
+				&:before {
+					content: "";
+					background-color: #fff;
+					height: 5px;
+					position: absolute;
+					left: 30px;
+					right: 30px;
+					top: 0;
+				}
+
+				> a {
+					color: #fff;
+				}
+			}
+
+			> a {
+				display: block;
+				padding: 10px 30px;
+				color: #ddd;
+				font-size: large;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	&-category {
+		&-all {
+			background-color: @ck-main;
+			font-size: large;
+			color: #333;
+			display: block;
+			float: left;
+			padding: 20px 50px;
+			margin-top: -10px;
+			margin-bottom: -10px;
+			position: relative;
+
+			&:before {
+				content: "";
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px;
+				border-top-color: transparent;
+				border-right-color: transparent;
+				border-left-color: #e0e0e0;
+				border-bottom-color: #e0e0e0;
+				position: absolute;
+				top: 0;
+				right: -10px;
+			}
+
+			&:after {
+				content: "";
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px;
+				border-bottom-color: transparent;
+				border-right-color: transparent;
+				border-left-color: #e0e0e0;
+				border-top-color: #e0e0e0;
+				position: absolute;
+				bottom: 0;
+				right: -10px;
+			}
+
+			> a {
+				color: #333;
+				&:hover,
+				&:focus,
+				&:active {
+					color: #333;
+				}
+			}
+
+			
+
+			&:hover,
+			&:focus {
+				.header-category-lv-1 {
+					display: block;
+				}
+			}
+		}
+
+		&-lv-1 {
+			display: none;
+			position: absolute;
+			background-color: #F0F0F0;
+			font-size: 14px;
+			width: 100%;
+			top: 100%;
+			left: 0;
+			z-index: 99;
+			margin: 0;
+			padding: 0;
+
+			> li {
+				list-style-type: none;
+				display: block;
+
+				> a {
+					display: block;
+					color: #333;
+					padding: 10px;
+					position: relative;
+
+					&:hover,
+					&:focus,
+					&:active {
+						color: @ck-main;
+						background-color: #fff;
+						text-decoration: none;
+
+						[class^="icon-"], [class*=" icon-"] {
+							display: none;
+						}
+					}
+
+					[class^="icon-"], [class*=" icon-"] {
+						float: right;
+						margin-top: 3px;
+					}
+				}
+
+				&:hover {
+					.header-category-lv-2 {
+						display: block;
+					}
+				}
+			}
+		}
+
+		&-lv-2 {
+			display: none;
+			z-index: 99;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			left: 100%;
+			top: 0;
+			width: 936px;
+			background-color: #fff;
+			padding: 15px 30px;
+			padding-bottom: 0;
+
+			> li {
+				list-style-type: none;
+				display: block;
+				padding-top: 10px;
+				padding-bottom: 5px;
+				border-bottom: 1px dashed #ddd;
+				position: relative;
+				.clearfix();
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				> a {
+					display: block;
+					float: left;
+					color: #333;
+					position: relative;
+
+					&:before {
+						content: "";
+						display: block;
+						position: absolute;
+						height: 2px;
+						width: 10px;
+						background-color: @ck-main;
+						top: 0;
+						bottom: 0;
+						left: -20px;
+						margin: auto;
+					}
+
+					&:hover,
+					&:focus,
+					&:active {
+						color: #333;
+					}
+				}
+			}
+		}
+
+		&-lv-3 {
+			display: block;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			padding-left: 15px;
+
+			> li {
+				display: block;
+				float: left;
+				list-style: none;
+				margin-right: 25px;
+				margin-bottom: 10px;
+
+				> a {
+					color: #88807D;
+				}
+			}
+		}
+	}
+}

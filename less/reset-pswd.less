@@ -1,0 +1,169 @@
+@import "./public.less";
+.reset-pswd {
+	&-panel {
+		border: 1px solid #cacaca;
+		border-radius: 2px;
+		background-color: #fff;
+
+		&-header {
+			padding: 20px;
+			border-bottom: 1px solid #cacaca;
+			color: #a89d99;
+		}
+
+		&-title {
+			margin: 0;
+			color: #333;
+			font-size: 18px;	
+		}
+
+		&-body {
+			padding-top: 30px;
+			padding-bottom: 50px;
+
+			.input-group-addon:first-child {
+				border-radius: 0;
+			}
+
+			.input-group .form-control:last-child {
+				border-radius: 0;
+			}
+
+			.input-group-addon {
+				background-color: #fff;
+			}
+
+			.em {
+				display: inline-block;
+				width: 1em;
+			}
+
+			.control-label {
+				padding-top: 12px;
+				font-weight: normal;
+				color: #969696;
+			}
+
+			.form-control {
+				border-radius: 0;
+			}
+
+			.btn {
+				border-radius: 0;
+			}
+		}
+	}
+
+	&-form {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	&-steps {
+		.clearfix();
+		margin-bottom: 60px;
+	}
+
+	&-step {
+		float: left;
+		display: block;
+		width: 25%;
+		text-align: center;
+		position: relative;
+
+		&-text {
+			position: absolute;
+			width: 100%;
+			bottom: -30px;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+			border: 1px solid #ddd;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: #ddd;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			z-index: 9;
+		}
+
+		&:first-child:after {
+			width: 50%;
+			left: 50%;
+		}
+
+		&:last-child:after {
+			width: 50%;
+			left: 0;
+			right: auto;
+		}
+
+		&.active {
+			&:after {
+				background-color: @ck-main;
+			}
+
+			&:before {
+				border-color: @ck-main;
+			}
+
+			> span {
+				background-color: @ck-main;
+			}
+
+			.reset-pswd-step-text {
+				color: @ck-main;
+			}
+		}
+
+		> span {
+			font-size: 16px;
+			background-color: #ddd;
+			display: block;
+			margin: auto;
+			width: 30px;
+			height: 30px;
+			line-height: 27px;
+			border-radius: 50%;
+			position: relative;
+			z-index: 99;
+		}
+	}
+
+	&-code-btn {
+		padding: 12px 5px;
+		background-color: #251b19;
+		border: none;
+		color: white;
+		display: block;
+		width: 100%;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: lighten(#251b19, 10%);
+		}
+
+		&[disabled] {
+			background-color: #dedede;
+		}
+	}
+}

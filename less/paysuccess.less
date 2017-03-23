@@ -1,0 +1,91 @@
+@import "./public.less";
+.paysuccess {
+	.em {
+		display: inline-block;
+		width: 1em;
+	}
+	.em_5 {
+		display: inline-block;
+		width: .5em;
+	}
+	ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,input {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		color: #665c59;
+	}
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}	
+	&-alert{
+		background-color: #fff;
+		margin-top: 50px;
+		padding:75px 0;
+		text-align: center;
+		color:#999;
+		h4{
+			color:#000;
+			span{
+				color:#00a0e9;
+				font-size: 24px;
+				margin-right: 5px;
+			}
+		}
+		p{
+			margin-top:10px;
+			font-size:16px;
+		}	
+	}
+	&-paydetail{
+		margin-top:20px;
+		>div{
+			margin-top:20px;
+		}
+		>div:first-child{
+			span{
+				color:#ff5614;
+				font-size:18px;
+			}
+		}
+		>div:last-child{
+			border-top: 1px solid #ddd;
+			padding:20px 0;
+			button{
+				background: #fcc505;
+				border:none;
+				padding:15px 45px;
+				margin-right:50px;
+				color:#000;
+				&:focus{
+					outline: none;
+				}
+			}
+		}
+	}
+	&-order{
+		margin-top:50px;
+		background:#fff;
+		padding:10px 0 20px 0;
+		&-peisong{
+			margin-top:20px;
+			border-bottom: 1px solid #f2f2f2;
+			padding:0 20px 30px 20px;
+			>div{
+				margin-top:10px;
+			}
+			>div:first-child{
+				border-bottom:1px solid #ddd;
+				padding-bottom: 10px;
+			}
+		}
+		&-peisong:last-child{
+			border-bottom:none;
+		}
+	}
+}

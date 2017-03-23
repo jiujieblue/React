@@ -1,0 +1,163 @@
+@import "./public.less";
+
+
+.user-footprint{
+	ul{list-style: none;}
+	ul,li,p,h1,h2,h3,h4,h5{
+		padding: 0;
+		margin: 0;
+	}
+	background: #fff;
+	min-height: 690px;
+	&-current{
+		.clearfix();
+		>p{
+			padding: 15px 20px;
+			border-bottom: 1px solid #fcc505;
+			span{
+				color: #777;
+			}
+		}
+		>ul{
+			margin: 15px 20px;
+			background: #f5f5f5;
+			li{
+				display: inline-block;
+				width: 95px;
+				padding: 10px 0;
+				text-align: center;
+				border-right: 1px solid #fff;
+				&:first-child{
+					padding: 10px 0;
+					width: 120px;
+					color: #fcc505;
+				}
+				&:hover{
+					background: #ebebeb;
+				}
+			}
+		}
+	}
+	&-product{
+		background: #fff;
+		padding-left: 20px;
+		&-quanshan{
+			ul{
+				margin-right: 20px;
+				.clearfix();
+				li{
+					float: left;
+					text-align: right;
+					&:first-child{
+						width: 66%;
+						span{
+							color: red;
+							padding: 0 3px;
+						}
+						a{
+							color: red;
+							margin-left: 20px;
+						}
+					}
+					&:last-child{
+						width: 34%;
+						position: relative;
+						input{
+							margin-right: 30px;
+							vertical-align: text-top;
+						}
+						p{
+							display: inline-block;
+							cursor: pointer;
+							span{
+								margin: -2px 8px 0 20px;
+							}
+							&:nth-child(2){
+								position: absolute;
+								top: 0;right: 67px;
+								padding-left: 25px;
+								z-index: 100;
+							}
+						}
+						a{
+							color: #777;
+						}
+					}
+				}
+			}
+		}
+		&-list{
+			>p{
+				padding-top: 15px;
+				margin-bottom: 10px;
+				margin-right: 20px;
+				border-top: 1px solid #ccc;
+				span{
+					color: red;
+				}
+				b{
+					font-weight: normal;
+					margin-right: 20px;
+					color: #999;
+				}
+			}
+			>ul{
+				.clearfix();
+				li{
+					float: left;
+					width: 25%;
+					padding: 0 20px 30px 0;
+					position: relative;
+					height: 330px;
+					div{
+						border: 1px solid #ccc;
+						margin: 10px 0;
+						height: 211px;
+						i,b{
+							position: absolute;
+							right: 30px;
+							font-size: 20px;
+							padding: 5px;
+							border-radius: 2px;
+							color: #fff;
+							background: rgba(95, 85, 84, 0.5);
+							cursor: pointer;
+							transition: opacity 0.35s linear,background 0.3s linear;
+							opacity: 0;
+							&:hover{
+								background: rgba(95, 85, 84, 1);
+							}
+						}
+						i{
+							top:20px
+						}
+						b{
+							top: 60px;
+						}
+						img{
+							width: 100%;
+						}
+						&:hover i,&:hover b{
+							opacity: 1;
+						}
+					}
+					a{
+						display: block;
+						color: #999;
+					}
+					span{
+						position: absolute;
+						bottom: 20px;
+						left: 0;
+						font-size: 18px;
+					}
+				}
+			}
+			&:nth-child(2){
+				p{
+					border: none;
+				}
+			}
+		}
+	}
+}

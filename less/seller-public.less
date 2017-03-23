@@ -1,0 +1,95 @@
+@import "./public.less";
+.seller-public{
+	.em{
+		display:inline-block;
+		width:1em;
+	}
+	.em_5{
+		display:inline-block;
+		width:.5em;
+	}
+	ul,	ol,	li,	p,	h1, h2,	h3,h4,	h5,	h6,	dl,	dt,	dd,	input {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	min-height: 788px;
+	background: #fff;
+	padding-bottom:20px;
+
+	&-location{
+		padding:20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fcc505;
+	}
+
+	&-msgbox{
+		padding:0 10%;
+		margin-top: 50px;
+		.public-menu{
+			li{
+				display:inline-block;
+				text-align: center;
+				width:50%;
+				border:1px solid #ddd;
+				padding:10px 0;
+				cursor:pointer;
+			}
+			li:first-child{
+				border-right: none;
+			}
+			.active{
+				background:#eee;
+			}
+		}
+		.public-msg-kong{
+			text-align:center;
+			>span{
+				font-size: 120px;
+				display:inline-block;
+				margin-top:150px;
+				color:#ddd;
+			}
+			>p{
+				font-size:24px;
+				color:#ddd;
+				margin-top:20px;
+			}
+		}
+		.public-msg-content{
+			padding-right: 40px;
+			padding-bottom:20px;
+			border:1px solid #ddd;
+			border-top: none;
+			height:625px;
+			overflow:auto;
+			.msg-list{
+				padding:30px;
+				padding-right:0;
+				border-bottom:1px dotted #ddd;
+				overflow: hidden;
+				>div{
+					float:left;
+				}
+				>div:last-child{
+					float:right;
+				}
+				&-tit{
+					p{
+						margin-top:35px;
+					}
+				}
+				&-time{
+					p:last-child{
+						margin-top:35px;
+					}
+				}
+			}
+		}
+	}
+}

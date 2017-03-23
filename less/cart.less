@@ -1,0 +1,323 @@
+@import "./public.less";
+.cart {
+	overflow: hidden;
+	margin-top: 60px;
+
+	ul,
+	ol,
+	li,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	dl,
+	dt,
+	dd,
+	input {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		color: #665c59;
+	}
+
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+	}
+
+	>div:first-child {
+		margin-bottom: 30px;
+		overflow: hidden;
+
+		>ul {
+			overflow: hidden;
+			float: left;
+			background: #eee;
+			padding: 10px 15px;
+
+			li {
+				text-align: center;
+				float: left;
+				margin-left: 90px;
+			}
+
+			li:first-child {
+				margin-left: 35px;
+			}
+
+		}
+
+		>ul:first-child {
+			li:first-child {
+				margin-left: 0;
+
+				input {
+					margin-right: 10px;
+				}
+
+			}
+
+		}
+
+		>ul:nth-child(2) {
+			li:first-child {
+				margin-left: 50px;
+			}
+
+			li:last-child {
+				margin-left: 130px;
+			}
+		}
+	}
+
+	&-shop {
+		overflow: hidden;
+		margin-top: 20px;
+
+		&-name {
+			input {
+				margin-right: 10px;
+			}
+
+			padding: 0 15px;
+			margin-bottom: 10px;
+		}
+
+		>div:nth-child(2) {
+			background: #f3f3f3;
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+
+		>div>div {
+			border-bottom: 1px solid #ddd;
+			margin: 0 15px;
+			padding: 15px 0;
+		}
+
+		&-send {
+			margin-left: 35px;
+			border: none;
+			overflow:hidden;
+			>div{
+				float:left;
+				margin-right:30px;
+				>label{
+					margin-right:5px;
+				}
+			}
+		}
+
+		&-shopping {
+			&-detail {
+				overflow: hidden;
+
+				>div {
+					padding: 0;
+					float: left;
+					overflow: hidden;
+					img{
+						width:80px;
+						height:80px;
+					}
+					>div {
+						float: left;
+						margin-left: 50px;
+
+					}
+
+					>div:first-child {
+						margin-left: 20px;
+					}
+
+				}
+
+				>div:first-child {
+					margin-left: 0;
+					overflow: hidden;
+					padding-right: 20px;
+
+					input {
+						float: left;
+						margin-top: 30px;
+						margin-right: 10px;
+					}
+
+					img {
+						float: left;
+						margin-right: 20px;
+						vertical-align: top;
+					}
+
+				}
+
+				>div:nth-child(2) {
+					>div:first-child{
+						width:100px;
+						text-align:center;
+					}
+					>div:nth-child(2) {
+						>div:first-child {
+							overflow: hidden;
+							border: 1px solid #ddd;
+							>div {
+								float: left;
+								width: 35px;
+								heigth: 35px;
+								text-align: center;
+								cursor:pointer;
+							}
+
+							>div:first-child {
+								border-right: 1px solid #ddd;
+								height:24px;
+								background:#fff;
+								&:hover {
+									background: #aaa;
+								}
+
+							}
+
+							input {
+								width: 75px;
+								text-align:center;
+								float:left;
+								outline:none;
+								border:none;
+								height:24px;
+							}
+
+							>div:nth-child(3) {
+								background:#fff;
+								border-left: 1px solid #ddd;
+								height:24px;
+								&:hover {
+									background: #aaa;
+								}
+
+							}
+
+						}
+
+						>div:last-child {
+							margin-top: 10px;
+							text-align: center;
+						}
+
+					}
+
+				}
+
+				>div:nth-child(3) {
+					>div{
+						text-align:center;
+					}
+					>div:first-child {
+						width:55px;
+						margin-left: 45px;
+					}
+
+					>div:nth-child(2) {
+						width:60px;
+						margin-left: 60px;
+					}
+
+					>div:last-child {
+						width:85px;
+						margin-left: 50px;
+
+						span {
+							display: inline-block;
+							margin: 0 5px;
+						}
+						
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&-caozuo {
+		margin-top: 15px;
+		padding-left: 15px;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		overflow: hidden;
+		height: 50px;
+		line-height: 50px;
+
+		>div:first-child {
+			float: left;
+
+			>ul {
+				overflow: hidden;
+
+				>li {
+					float: left;
+					margin-left: 40px;
+
+					input {
+						margin-right: 10px;
+					}
+
+				}
+
+				>li:first-child {
+					margin-left: 0;
+				}
+
+			}
+
+		}
+
+		>div:last-child {
+			float: right;
+			overflow: hidden;
+
+			>div {
+				float: left;
+				margin-left: 20px;
+
+				span {
+					color: #ff5614;
+				}
+
+			}
+
+			>div:first-child {
+				margin-right: 10px;
+			}
+
+			>div:last-child {
+				button{
+					background: #ff6d32;
+					height: 50px;
+					width: 140px;
+					color: #fff;
+					border:none;
+					outline:none;
+					&:hover{
+						background: #ff5615;
+					}
+					
+				}
+			}
+
+		}
+
+	}
+
+}

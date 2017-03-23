@@ -1,0 +1,87 @@
+@import "./public.less";
+.sign-in {
+	background-image: url(../images/login_bg.jpg);
+	background-color: @ck-main;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+
+	&-img {
+		padding: 30px;
+	}
+
+	&-panel {
+		background-color: #fff;
+		margin: 30px;
+
+		&-header {
+			padding: 15px;
+			color: #b4aaa7;
+			border-bottom: 1px solid #cacaca;
+		}
+
+		&-title {
+			color: #333;
+			font-size: 18px;
+			margin-right: 10px;
+		}
+
+		&-aside {
+			float: right;
+
+			&-link {
+				font-size: 18px;
+				color: #333;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: #333;
+				}
+			}
+		}
+
+		&-body {
+			padding: 30px;
+
+			.input-group-addon:first-child {
+				border-radius: 0;
+			}
+
+			.input-group .form-control:last-child {
+				border-radius: 0;
+			}
+
+			.input-group-addon {
+				background-color: #fff;
+			}
+
+			.form-group {
+				padding: 0 60px;
+			}
+
+			.btn-primary {
+				border-radius: 30px;
+				&:focus{
+					outline: none;
+				}
+			}
+		}
+
+		&-options {
+			padding: 15px;
+			color: #b4aaa7;
+
+			a {
+				color: #b4aaa7;
+				display: inline-block;
+				padding-top: 7px;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: #b4aaa7;
+				}
+			}
+		}
+	}
+}

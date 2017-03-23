@@ -1,0 +1,185 @@
+@import "./public.less";
+.seller-member {
+	.em{
+		display:inline-block;
+		width:1em;
+	}
+	.em_5{
+		display:inline-block;
+		width:.5em;
+	}
+	ul,	ol,	li,	p,	h1, h2,	h3,h4,	h5,	h6,	dl,	dt,	dd,	input {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	min-height: 788px;
+	padding-bottom:20px;
+	&-location{
+		background:#fff;
+		padding:20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fcc505;
+	}
+	&-menu{
+		.menu-buyer{
+			background:#fff;
+			overflow: hidden;
+			padding: 20px;
+			>div{
+				float: left;
+				margin-right:80px;
+				margin-top: 20px;
+				label{
+					margin-right: 5px;
+				}
+				input{
+					padding: 2px 5px;
+					width:167px;
+				}
+				button{
+					background:#fcc505;
+					border:none;
+					outline: none;
+					border-radius: 5px;
+					padding:3px 25px;
+					margin-left:22px;
+				}
+			}
+			.menu-buyer-time{
+				margin-left: 56px;
+			}
+		}
+		.menu-member{
+			background:#fff;
+			overflow: hidden;
+			padding: 20px;
+			>div{
+				float: left;
+				margin-right:80px;
+				margin-top: 20px;
+				label{
+					margin-right: 5px;
+				}
+				input{
+					padding: 2px 5px;
+					width:167px;
+				}
+				button{
+					background:#fcc505;
+					border:none;
+					outline: none;
+					border-radius: 5px;
+					padding:3px 25px;
+					margin-left:22px;
+				}
+			}
+			.menu-member-time{
+				margin-left: 42px;
+			}
+		}
+		.menu-vip{
+			background:#fff;
+			overflow: hidden;
+			padding: 20px;
+			>div{
+				float: left;
+				margin-right:80px;
+				margin-top: 20px;
+				label{
+					margin-right: 5px;
+				}
+				input{
+					padding: 2px 5px;
+					width:167px;
+				}
+				button{
+					background:#fcc505;
+					border:none;
+					outline: none;
+					border-radius: 5px;
+					padding:3px 25px;
+					margin-left:22px;
+				}
+			}
+			.menu-vip-buyer{
+				margin-left:-2px;
+			}
+			.menu-vip-time{
+				margin-left: 42px;
+			}
+			.menu-vip-total{
+				select{
+					margin-right:45px;
+					width:100px;
+				}
+			}
+			.menu-vip-submit{
+				margin-right:0;
+				margin-left:-60px;
+			}
+		}
+	}
+	&-mod{
+		margin-top:20px;
+		background:#fff;
+		ul{
+			overflow:hidden;
+			li{
+				float:left;
+				padding: 10px 20px;
+				cursor:pointer;
+			}
+			.active{
+				background:#eee;
+			}
+		}
+	}
+	&-detail{
+		background:#fff;
+		.detail-buyer{
+			width:100%;
+			thead{
+				background:#eee;
+			}	
+			td{
+				text-align: center;
+				padding:10px 23px;
+			}
+			.caozuo{
+				width:100px;
+			}
+		}
+		.detail-member{
+			width:100%;
+			thead{
+				background:#eee;
+			}	
+			td{
+				text-align: center;
+				padding:10px 39px;
+			}
+			.caozuo{
+				width:112px;
+			}
+		}
+		.detail-vip{
+			width:100%;
+			thead{
+				background:#eee;
+			}	
+			td{
+				text-align: center;
+				padding:10px 39px;
+			}
+			.caozuo{
+				width:118px;
+			}
+		}
+	}
+}

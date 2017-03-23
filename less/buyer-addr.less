@@ -1,0 +1,241 @@
+@import "./public.less";
+.modal-del{
+	.em{
+		display:inline-block;
+		width:1em;
+	}
+	.em_5{
+		display:inline-block;
+		width:.5em;
+	}
+	&-tishi{
+		padding:10px 5px;
+		border-bottom:2px solid #fcc505;
+		font-size: 18px;
+		span{
+			color:#ff5613;
+			margin-right: 5px;
+		}
+	}
+	&-text{
+		text-align:center;
+		padding:50px 0;
+		border-bottom:1px solid #ddd;
+	}
+	&-button{
+		margin-top:30px;
+		text-align:center;
+		button{
+			padding: 10px 50px;
+			border-radius:5px;
+			border: 1px solid #ddd;
+			margin-right:20px;
+			&:focus{
+				outline:none;
+			}
+		}
+		button:first-child{
+			background:#fff;
+		}
+		button:last-child{
+			background:#fcc505;
+		}
+	}
+}
+.modal-add{
+	.em{
+		display:inline-block;
+		width:1em;
+	}
+	.em_5{
+		display:inline-block;
+		width:.5em;
+	}
+	&-tishi{
+		padding: 0 5px;
+		border-bottom:2px solid #fcc505;
+		overflow:hidden;
+		h4{
+			float: left;
+			color:#fcc505;
+		}
+		button{
+			float:right;
+			margin-top:5px;
+			padding:5px 10px;
+			border-radius:5px;
+			background:#fff;
+			border:none;
+			&:focus{
+				outline:none;
+			}
+		}
+	}
+	&-form{
+		form{
+			padding:0 20px;
+			>div{
+				margin-top:15px;
+				>b{
+					color:#f33;
+				}
+				.shouhuoname{
+					width:100px;
+				}
+				.detailaddr{
+					width:350px;
+				}
+				.youzheng{
+					width:80px;
+				}
+				.mobile{
+					width:210px;
+				}
+				.quhao{
+					width:40px;
+				}
+				.dianhua{
+					width:100px;
+				}
+				.fenji{
+					width:40px;
+				}
+				.moren{
+					margin-left:90px;
+				}
+				select{
+					margin-right:15px;
+				}
+				.province{
+					width:136px;
+				}
+				.city{
+					width:120px;
+				}
+				.area{
+					width:120px;
+				}
+			}
+			.moren-box{
+				padding-bottom:20px;
+				border-bottom:1px solid #ddd;
+			}
+			.baocun-box{
+				text-align:center;
+				>button{
+					background:#fcc505;
+					padding:8px 15px;
+					border: 1px solid #ddd;
+					border-radius:5px;
+					&:focus{
+						outline:none;
+					}
+				}
+			}
+		}
+		
+	}
+}
+.buyer-addr {
+	.em{
+		display:inline-block;
+		width:1em;
+	}
+	.em_5{
+		display:inline-block;
+		width:.5em;
+	}
+	ul,	ol,	li,	p,	h1, h2,	h3,h4,	h5,	h6,	dl,	dt,	dd,	input {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	background: #fff;
+	&-location{
+		padding: 20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fcc505;
+	}
+	&-add{
+		padding:20px;
+		button{
+			padding: 5px 10px;
+			background:none;
+			border-radius: 5px;
+			border:2px solid #ddd;
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+	&-list{
+		width:100%;
+		text-align: center;
+		border-collapse: collapse;
+		td{
+			padding:10px;
+			background:#fff;
+			height:50px;	
+			.icon-moren{
+				display:inline-block;
+				margin-top:-10px;
+				margin-left:-20px;
+				margin-right:5px;
+				color:#fcc505;
+				font-size:18px;
+			}
+			.icon-sanchu{
+				cursor:pointer;
+				color:#e5e5e5;
+				&:hover{
+					color:#ff6514;
+				}
+			}	
+		}
+		.addrdet{
+			width:190px;
+		}
+		.addrdetail{
+			overflow:hidden;
+			text-align:center;
+			width:200px;
+			height:19px;
+			position:relative;
+			p{
+				width:190px;
+			}
+			span{
+				position:absolute;
+				right:0;
+				top:3px;
+				visibility: hidden;
+			}
+			&:hover{
+				span{
+					visibility: visible;
+				}
+			}
+		}
+		.addrdetailactive{
+			height:auto;
+		}
+		tr{
+			border-bottom:10px solid #f7f7f7;
+		}
+		tbody tr:last-child{
+			border-bottom:none;
+		}
+		thead{
+			td{
+				background:#eee;
+			}
+			
+		}
+	}
+}

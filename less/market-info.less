@@ -1,0 +1,113 @@
+@import "./public.less";
+
+.cart-market-main{
+	ul{
+		list-style:none;
+	}
+	ul,li,p,h1,h2,h3,h4,h5{
+		padding: 0;
+		margin: 0;
+	}
+	min-height: 788px;
+	padding: 0;
+	background: #fff;
+	&-current{
+		padding: 15px 20px;
+		border-bottom: 1px solid #fcc505;
+		margin-bottom: 30px;
+		span{
+			color:#bbb;
+		}
+	}
+	&-market-data{
+		padding: 0 50px 50px; 
+		overflow:hidden;
+		b{
+			font-weight: normal;
+		}
+		form{
+			li{
+				margin-bottom: 20px;
+				span{
+					display:inline-block;
+					text-align: right;
+					width: 80px;
+					color:#777;
+					margin-right: 5px;
+				}
+				[type="text"],select{
+					width:230px;
+					height: 35px;
+					padding: 10px;
+					border:none;
+					border:1px solid #ccc;
+				}
+				label{
+					font-weight: normal;
+					margin:0 20px 0 5px;
+				}
+				[type="checkbox"]{
+					position:relative;
+					top:2px;
+				}
+				input:focus,select:focus,option:focus{
+  					outline: none;
+				}
+				select{
+					padding:0 0 0 5px; 
+				}
+				&:nth-child(8)>div.alert-danger{
+					line-height: 40px;
+					padding: 0 0 0 10px;
+					width: 316px;
+					margin-top: 10px;
+				}
+			}
+			>input{
+				margin: 20px 0 30px 80px;
+				border:none;
+				border-radius:3px;
+				width: 80px;
+				height: 35px;
+				color:#fff;
+				background:#fcc506; 
+			}
+		}
+		.col-md-5:last-child{
+			border:1px solid #ccc;
+			padding:25px;
+			>div{
+				float:left;
+				height: 135px;
+				width: 110px;
+				padding:3px;
+				box-shadow: 1px 1px 5px 5px #ccc;
+				text-align: center;
+				position: relative;
+					img{
+						width: 100%;
+					}
+					span{
+						display: block;
+						padding:3px 0;
+						position: absolute;
+						bottom: 0;
+						left: 23px;
+						font-size: 16px;
+						color:#bbb;
+						cursor: pointer;
+						&:hover{
+							color: #333;
+						}
+					}
+			} 
+			>ul{
+				float: left;
+				padding-left: 10px;
+				li{
+					line-height: 35px;
+				}
+			}
+		}
+	}
+}

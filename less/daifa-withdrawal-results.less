@@ -1,0 +1,60 @@
+@import "./public.less";
+.daifa-withdrawal-results {
+		min-height: 690px;
+		background: #fff;
+		ul,li,p,h1,h2,h3,h4,h5{
+			padding: 0;
+			margin: 0;
+		}
+		ul{list-style: none;}
+		>p{
+			padding: 15px 20px;
+			&:first-child{
+				border-bottom: 1px solid #fcc506;
+			}
+			span{
+				color: #999;
+			}
+		}
+		>div{
+			width: 70%;
+			margin: 40px auto;
+			>div{
+				text-align: center;
+				font-size: 18px;
+				link{
+					display: block;
+					margin-bottom: 20px;
+					font-size: 90px;
+					&.icon-success{
+						color: #fcc505;
+					}
+					&.icon-shibai{
+						color: #ccc;
+					}
+					&.icon-but-processing{
+						color: #50c4fd;
+					}
+				}
+			}
+			>ul{
+				padding: 20px 0;
+				margin-left: 180px;
+				color: #777;
+				>li{
+					margin: 10px 0;
+				}
+			}
+			>p{
+				text-align: center;
+				a{
+					padding: 5px 30px;
+					background: #fcc505;
+					color: #333;
+					&:hover,&:visited{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+}

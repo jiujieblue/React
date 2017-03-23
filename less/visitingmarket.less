@@ -1,0 +1,395 @@
+@import "./public.less";
+@import "./ck-hr.less";
+
+.visitingmarket{
+
+	&-topone{
+		margin-top: 50px;
+		position: relative;
+		&-icon{
+			img{
+				margin: 0;
+				padding: 0;
+			}
+		}
+		&-title{
+			font-size: 25px;
+			position: absolute;
+			left: 34px;
+			top: -2px;
+		}
+	}
+
+	/**图片轮播开始**/
+	&-carousel {
+		position: relative;
+		min-height: 314px;
+		overflow: hidden;
+		float: left;
+		width: 100%;
+	
+		&:hover {
+			.slick-prev {
+				-webkit-transform: translateX(0%);
+				transform: translateX(0%);
+			}
+	
+			.slick-next {
+				-webkit-transform: translateX(0%);
+				transform: translateX(0%);
+			}
+		}
+	
+		&-item {
+			> a {
+				display: block;
+	
+				> img {
+					width: 100%;
+				}
+			}
+		}
+	
+		.slick-prev {
+			background-color: rgba(0, 0, 0, 0.3);
+			color: #fff;
+			border: none;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			font-size: 30px;
+			padding: 10px 5px;
+			outline: 0;
+			position: absolute;
+			height: 70px;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+	
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			
+			-webkit-transition: transform 0.2s ease;
+			transition: transform 0.2s ease;
+	
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+		}
+	
+		.slick-next {
+			background-color: rgba(0, 0, 0, 0.3);
+			color: #fff;
+			border: none;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			font-size: 30px;
+			padding: 10px 5px;
+			outline: 0;
+			position: absolute;
+			height: 70px;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+	
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+	
+			-webkit-transition: transform 0.2s ease;
+			transition: transform 0.2s ease;
+	
+			-webkit-transform: translateX(100%);
+			transform: translateX(100%);
+		}
+	
+		&-dots {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			position: absolute;
+			width: 100%;
+			bottom: 15px;
+			left: 0;
+			right: 0;
+	
+			> li {
+				display: inline-block;
+				font-size: 0;
+				background-color: rgba(255, 255, 255, 0.7);
+				border-radius: 10px;
+				margin-left: 10px;
+	
+				&:first-child {
+					margin-left: 0;
+				}
+	
+				&.slick-active {
+					> button {
+						padding: 5px 10px;
+						background-color: #fff;
+					}
+				}
+	
+				> button {
+					border: none;
+					padding: 5px;
+					border-radius: 10px;
+					outline: 0;
+					-webkit-transition: padding 0.5s ease;
+					transition: padding 0.5s ease;
+				}
+			}
+		}
+	}
+	/**图片轮播结束**/
+
+	/**市场分类盒子开始**/
+	&-cotegorybox{
+		margin-top: 25px;
+		ul{
+			margin:0;
+			padding:0;
+		}
+		.col-md-2{
+			height: 40px;
+			background-color: #ECECEC;
+			line-height: 40px;
+			font-size: 16px;
+			border-bottom: 1px solid #fff;
+		}
+		.col-md-10{
+			background-color: #fff;
+			border-bottom: 1px solid #ECECEC;
+		}
+		ul li{
+			display: block;
+			float: left;
+			list-style: none;
+			margin: 10px;
+			> a {
+				font-size: 14px;
+				color: @ck-sub;
+				&:hover,
+				&:visited{
+					color: @ck-main;
+					text-decoration: none;
+				}
+			}
+		}
+		&-list{
+			
+		}
+		&-item{
+
+		}
+	}
+	/**市场分类盒子结束**/
+
+	/**面包屑盒子开始**/
+	&-marketbc{
+		ol{
+			margin: 0;
+			padding: 0;
+		}
+		ol>li{
+			font-size: 16px;
+			a{
+				color: #A2A2A2;
+			}
+		}
+		margin: 20px 0;
+		padding: 0;
+		.breadcrumb{
+			.active{
+				color: @ck-sub;
+			}
+		}
+		.breadcrumb > li + li:before {
+		    color: #000;
+		    content: "> ";
+		    padding: 0 2px;
+		}
+	}
+	/**面包屑盒子结束**/
+
+	/**市场列表盒子开始**/
+	&-listbox{
+		&-fistpart{
+			ul{
+				margin: 0;
+				padding: 0;
+			}
+			ul>li{
+				display: block;
+				float: left;
+				list-style: none;
+				margin: 10px 0;
+			}
+			&-list{
+				&-item{
+					width: 20%;
+					height: 350px;
+					border: 1px solid #F7F7F7;
+					background-color: #fff;
+					.content{
+						&-title{
+							text-align: center;
+							padding: 20px 5px;
+							border-bottom:1px solid #F7F7F7;
+							font-size: 18px;
+							height: 84px;
+
+						}
+						&-other{
+							position: relative;
+							&-avatar{
+								width: 60px;
+								height: 60px;
+								margin: 14px auto;
+								img{
+									width: 100%;
+									height: 100%;
+									border-radius: 50%;
+								}
+							}
+							span{
+								font-size: 18px;
+								color: #6A605A;
+							}
+							span:nth-child(4){
+								color: #ABA29E;
+							}
+							&-textone{
+								text-align: center;
+								position: absolute;
+								top:70px;
+								left: 0;
+								right: 0;
+							}
+							&-texttwo{
+								text-align: center;
+								position: absolute;
+								top:100px;
+								left: 10px;
+								right: 10px;
+							}
+							&-textthree{
+								text-align: center;
+								position: absolute;
+								top:160px;
+								left: 0;
+								right: 0;
+							}
+							a{
+								padding: 5px 20px;	
+							}
+							&-link{
+								position: absolute;
+								top: 190px;
+								left: 65px;
+								font-size: 16px;
+								background-color: @ck-sub;
+								color: #fff;
+								border-radius: 16px;
+								box-shadow: 3px 3px 10px rgb(0,0,0,0.8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/**市场列表盒子结束**/
+
+	/**搜索盒子开始**/
+	&-searchbox {
+		padding-top: 10px;
+		h4{
+			padding: 0;
+			margin: 0;
+			color: #ADADAD;
+		}
+	}
+	/**搜索盒子结束**/
+
+	/**人气推荐盒子开始**/
+	&-rebox{
+		&-toptwo{
+			margin-top: 50px;
+			.hotspan{
+				background-color: #FF3D00;
+				color: #fff;
+				font-size: 24px;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			.titlespan{
+				font-size: 24px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		&-links{
+			ul{
+				margin: 0;
+				padding: 0;
+			}
+			ul > li{
+				display: block;
+				float: left;
+				list-style: none;
+				margin: 10px 0px;
+			}
+			.list{
+				&-item{
+					width: 20%;
+					height: 390px;
+					background-color: #fff;
+					position: relative;
+					border: 1px solid #F7F7F7;
+					&-img{
+						img{
+							width: 100%;
+						}
+					}
+					&-price{
+						font-size: 20px;
+						letter-spacing: 1px;
+						color: #FF3D00;
+						position: absolute;
+						top:250px;
+						padding: 0 10px;
+					}
+					&-title{
+						position: absolute;
+						top: 300px;
+						padding: 0 10px;
+						color: #776E6C;
+					}
+					&-lspan{
+						position: absolute;
+						top: 350px;
+						left: 0;
+						padding: 0 10px;
+						color: #B7AFAB;
+					}
+					&-rspan{
+						position: absolute;
+						top: 350px;
+						right: 0;
+						padding: 0 10px;
+						color: #B7AFAB;
+					}
+				}
+			}
+		}
+	}
+	/**人气推荐盒子结束**/
+
+}

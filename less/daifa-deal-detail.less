@@ -1,0 +1,92 @@
+@import "./public.less";
+.daifa-deal-detail {
+	.em{
+		display:inline-block;
+		width:1em;
+	}
+	.em_5{
+		display:inline-block;
+		width:.5em;
+	}
+	ul,	ol,	li,	p,	h1, h2,	h3,h4,	h5,	h6,	dl,	dt,	dd {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	a {
+		color: #665c59;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	min-height: 788px;
+	background: #fff;
+	padding-bottom:20px;
+	&-location{
+		padding:20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fcc505;
+	}
+
+	&-menu{
+		overflow: hidden;
+		padding:20px;
+
+		>div{
+			display:inline-block;
+			margin-right:40px;
+			margin-top:20px;
+			>span{
+				margin-right: 10px;
+			}
+			>select{
+				text-align: center;
+				width:120px;
+				padding:3px 5px;
+				border-radius:0;
+			}
+		}
+		.menu-time{
+			input{
+				width:167px;
+			}
+		}
+		.menu-order{
+			input{
+				width:160px;
+			}
+		}
+		>button{
+			display:inline-block;
+			margin-top:20px;
+			padding:5px 30px;
+			background:#fcc505;
+			border:none;
+			border-radius: 3px;
+			&:focus{
+				outline:none;
+			}
+		}
+		
+	}
+	&-name{
+		margin-top: 20px;
+		table{
+			width:100%;
+			text-align:center;
+			thead{
+				background:#eee;
+				td{
+					padding:10px;
+				}
+			}
+			tbody{
+				tr{
+					border-bottom:1px solid #f7f7f7;
+				}
+				td{
+					padding:15px 10px;
+				}
+			}
+		}
+	}
+}

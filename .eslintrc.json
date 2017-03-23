@@ -1,0 +1,47 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "installedESLint": true,
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "off",
+            "tab"
+        ],
+        "linebreak-style": [
+            "off",
+            "unix"
+        ],
+        "quotes": [
+            "off",
+            "single"
+        ],
+        "semi": [
+            "off",
+            "always"
+        ],
+        "no-extra-boolean-cast": "off",
+        "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }],
+        "react/jsx-uses-vars": [1]
+    },
+    "globals": {
+        "__": true,
+        "$": true,
+        "WeixinJSBridge": true,
+        "wx": true
+    }
+}

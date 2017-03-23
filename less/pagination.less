@@ -1,0 +1,67 @@
+@ck-main: #fcc505;
+@ck-sub: #372f2c;
+
+.ck-nav {
+	text-align: center;
+	font-size: 17px;
+	&-pagination {
+		display: inline-block;
+		margin-right: 20px;
+		li {
+			padding: 7px 15px;
+			background-color: #fff;
+			display: inline-block;
+			border-radius: 5px;
+			a {
+				color: #333;
+				text-decoration: none;
+				.icon-xianghou,.icon-xiangqian {
+					font-size: 20px;
+					font-weight: 700;
+				}
+			}
+			&:hover {
+				background-color: #ececec;
+				a {
+					color: #fff;
+				}
+			}
+		}
+		li+li {
+			margin-left: 10px;
+		}
+		li.disabled {
+			a {
+				color: #ddd;
+			}
+		}
+		li.active {
+			background-color: @ck-main;
+			a {
+				color: #fff;
+			}
+		}
+	}
+	input {
+		    display: inline-block;
+		    width: 39px;
+		    height: 39px;
+		    border: 0;
+		    border-radius: 5px;
+		    margin: 0 15px;
+		    padding-left:8px;
+		    padding-right: 4px;
+		    text-align: center;
+	}
+    input:focus {
+      	outline: none;
+    }
+	.btn {
+		height: 39px;
+		margin-left: 25px;
+		border-radius: 5px;
+		border: 0;
+		vertical-align: top;
+		font-size: 17px;
+	}
+}

@@ -1,0 +1,75 @@
+@import "./public.less";
+
+.wallet-withdrawal-details {
+	&-box{
+		min-height: 690px;
+		background: #fff;
+		padding-left: 20px;
+		ul,li,p,h1,h2,h3,h4,h5{
+			padding: 0;
+			margin: 0;
+		}
+		ul{list-style: none;}
+		>p{
+			padding: 15px 0;
+			&:first-child{
+				border-bottom: 1px solid #fcc506;
+			}
+			span{
+				color: #999;
+			}
+		}
+		&-success{
+			width: 70%;
+			margin: 20px auto;
+			>div{
+				text-align: center;
+				font-size: 18px;
+				link{
+					display: block;
+					margin-bottom: 20px;
+					font-size: 90px;
+					&.icon-success{
+						color: #fcc505;
+					}
+					&.icon-shibai{
+						color: #ccc;
+					}
+					&.icon-but-processing{
+						color: #50c4fd;
+					}
+				}
+			}
+			>ul{
+				padding: 20px 0;
+				margin-left: 180px;
+				color: #888;
+				>li{
+					margin: 30px 0;
+					span{
+						width: 70px;
+						margin-right: 10px;
+						float: left;
+					}
+					>ul{
+						display: inline-block;
+						>li{
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+			>p{
+				text-align: center;
+				a{
+					padding: 5px 30px;
+					background: #fcc505;
+					color: #333;
+					&:hover,&:visited{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

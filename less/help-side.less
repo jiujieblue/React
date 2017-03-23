@@ -1,0 +1,41 @@
+@import "./public.less";
+.help-side {
+	ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	color:#665c59;
+	}
+	a{
+		text-decoration: none;
+		color: #1a1a1a;
+	}
+	background: #eee;
+	padding:10px 0;
+	>p{
+		padding:5px 15px;
+		font-size: 20px;
+		color:#1a1a1a;
+	}
+	>ul{
+		li{
+			padding:5px 15px;
+			padding-right: 0;
+			cursor: pointer;
+			overflow: hidden;
+			&:hover{
+				background:#e7e7e7;
+			}
+			>p{
+				float: left;
+			}
+			span{
+				float:right;
+				display: none;
+				margin-right: 10px;
+				margin-top: 3px;
+			}
+
+		}
+	}
+}

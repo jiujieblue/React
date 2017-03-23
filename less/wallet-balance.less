@@ -1,0 +1,207 @@
+@import "./public.less";
+
+
+.wallet-balance {
+	ul,li,p,h1,h2,h3,h4,h5{
+		padding: 0;
+		margin: 0;
+	}
+	ul{list-style: none;}
+	a.active:hover,a.active:visited{
+		text-decoration: none;
+	}
+	// 交易明细
+	min-height: 690px;
+	background: #fff;
+	>div:first-child{
+		>p{
+			padding: 15px 20px;
+			&:first-child{
+				border-bottom: 1px solid #fcc506;
+				span{
+					color: #777;
+				}
+			}
+		}
+	}
+	// 用户信息
+	&-userinfo{
+		margin: 20px 20px 0;
+		border: 1px solid #ccc;
+		>section{
+			padding: 20px;
+			&:first-child{
+				.clearfix();
+				>section{
+				float: left;
+					img{
+						width: 70px;
+						height: 70px;
+						border: 1px solid #ccc;
+						border-radius: 50%;
+						margin-right: 15px;
+					}
+				}
+				>ul{
+					float: left;
+					line-height: 65px;
+					li{
+						float: left;
+						color: #999;
+						link{
+							margin: -3px 5px 0 20px;
+							font-size: 24px;
+							&.wallet-balance-userinfo-isPass{
+								color: #fcc505;
+								&+span{
+									color: #333;
+								}
+							}
+						}
+					}
+				}
+			}
+			&:nth-child(2){
+				background: #f7f7f7;
+				.clearfix();
+				li{
+					&:first-child{
+						float: left;
+						span{
+							font-size: 18px;
+						}
+						b{
+							margin: 0 15px;
+							font-weight: normal;
+							font-size: 18px;
+							color: red;
+						}
+						a{
+							color: #4fc4fa;
+						}
+					}
+					&:last-child{
+						float: right;
+						a{
+							display: inline-block;
+							width: 90px;
+							padding: 3px 0;
+							margin-left: 30px;
+							text-align: center;
+							color: #333;
+							&:first-child{
+								background: #e5e5e5;
+							}
+							&:last-child{
+								background: #fcc505;
+							}
+						}
+					}
+				}
+			}
+			&:nth-child(3){
+				>ul{
+					.clearfix();
+					>li{
+						float: left;
+						margin-right: 20px;
+						link{
+							margin: -3px 5px 0 0;
+							font-size: 16px;
+						}
+						span{
+							margin: 0 5px;
+							color: #4fc4fa;
+						}
+						&:nth-child(1),&:nth-child(2){
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	// 交易明细
+	&-detail{
+		>div{
+			padding: 0 20px;
+			>p{
+				margin: 20px 0;
+				font-size: 18px;
+			}
+			// 交易明细--时间范围
+			>form>table{
+				width: 100%;
+				margin: 20px 0;
+				tr td{
+					text-align: center;
+					&:first-child{
+						width: 375px;
+						text-align: left;
+						input{
+							width: 145px;
+						}
+					}
+					&:nth-child(2){
+						position: relative;
+						input{
+							width: 155px;
+						}
+						p{
+							position: absolute;
+    						left: 78px;
+    						font-size: 12px;
+							color: red;
+						}
+					}
+					&:last-child{
+						text-align: right;
+					}
+					button{
+						width: 80px;
+						border: none;
+					}
+					&:nth-child(4) button{
+						background: #fcc505; 
+					}
+					input{
+						height: 22px;
+						padding: 0 5px;
+						border: 1px solid #ccc;
+					}
+					select,input,button{
+						outline: none;
+					}
+				}
+			}
+		}
+		// 交易明细--列表
+		>table{
+			width: 100%;
+			text-align: center;
+			th{
+				padding: 8px 0;
+				text-align: center;
+				background: #eee;
+				font-weight: normal;
+			}
+			td{
+				padding: 15px 0;
+				border-bottom: 1px solid #eee;
+			}
+		}
+	}
+	// 交易明细--分页
+	&-page{
+		text-align: center;
+		span{
+			margin: 0 5px;
+		}
+	}
+}
+
+.react-datepicker__input-container{
+	input{
+		width: 100px;
+	}
+}

@@ -1,0 +1,49 @@
+@import "./public.less";
+.row{
+	overflow: hidden;
+	.col-md-12{
+		padding:0;
+	}
+}
+.pay-footer {
+	margin-top: 50px;
+	&-links {
+		background-color: @ck-sub;
+		text-align: center;
+		padding-top: 20px;
+		position: relative;
+	}
+
+	&-link {
+		color: @ck-main;
+		position: relative;
+		display: inline-block;
+
+		& + & {
+			margin-left: 30px;
+			&:before {
+				content: "";
+				width: 1px;
+				background-color: @ck-main;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				height: 100%;
+				left: -15px;
+			}
+		}
+
+		&:hover,
+		&:hover,
+		&:active {
+			text-decoration: none;
+			color: lighten(@ck-main, 10%);
+		}
+	}
+
+	&-copy {
+		color: #6f615c;
+		padding: 15px;
+		margin: 0;
+	}
+}
